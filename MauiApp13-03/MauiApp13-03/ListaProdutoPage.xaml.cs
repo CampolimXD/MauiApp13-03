@@ -4,6 +4,15 @@ public partial class ListaProdutoPage : ContentPage
 {
 	public ListaProdutoPage()
 	{
-		InitializeComponent();
+        List<Produto> lista = Produto.Lista;
+			
+        InitializeComponent();
+		listaProduto.ItemsSource = lista;
 	}
+
+    private void ViewCell_Tapped(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ProdutoPage() { BindingContext = ((ViewCell)sender).BindingContext });
+        DisplayAlert("", "", "");
+    }
 }
