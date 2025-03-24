@@ -3,46 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp13_03.ProdutoPage"
              BindingContext="{x:Reference Produto}"
-             Title="ProdutoPage">
-    <VerticalStackLayout>
-        <HorizontalStackLayout>
-            <Label 
-                Text="Nome"
-                FontSize="Large"
-                VerticalOptions="Center" 
-                HorizontalOptions="Start" />
-            <Label 
-                Text="{Binding Nome}"
-                FontSize="Large"
-                VerticalOptions="Start" 
-                HorizontalOptions="EndAndExpand" />
-        </HorizontalStackLayout>
-        <HorizontalStackLayout>
-            <Label 
-                 Text="Preço"
-                 FontSize="Large"
-                 VerticalOptions="Start" 
-                 HorizontalOptions="Start" />
-            <Label 
-                 Text="{Binding Preco}"
-                 FontSize="Large"
-                 VerticalOptions="Start" 
-                 HorizontalOptions="End" />
-        </HorizontalStackLayout>
-        <HorizontalStackLayout>
-            <Label 
-                 Text="Categoria"
-                 FontSize="Large"
-                 VerticalOptions="Start" 
-                 HorizontalOptions="Start" />
-            <Label 
-                 Text="{Binding Categoria}"
-                 FontSize="Large"
-                 VerticalOptions="Start" 
-                 HorizontalOptions="End" />
-        </HorizontalStackLayout>
-
-
+             >
+    <VerticalStackLayout BackgroundColor="#1F2B33" Padding="10">
+        <Label FontSize="Large" Text="{Binding Nome, StringFormat= 'Pagina do produto: {0}'}"/>
+        <Border Stroke="Black" StrokeThickness="2" StrokeShape="RoundRectangle 20,20,20,20" BackgroundColor="#0D1D2A"  Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Text="{Binding Nome}" FontSize="Title"/>
+                <Label Grid.Row="1" Text="{Binding Preco, StringFormat= 'Preço: R${0}'}"/>
+                <Label Grid.Row="2" Text="{Binding Marca, StringFormat= 'Marca: {0}'}"/>
+                <Label Grid.Row="3" Text="{Binding Cor, StringFormat= 'Cor: {0}'}"/>
+                <Label Grid.Row="4" Text="{Binding Ano, StringFormat= 'Ano: {0}'}"/>
+            </Grid>
+        </Border>
+        <Grid Padding="20">
+            <Button        
+             Text="Voltar pra Lista"
+             x:Name="btnVoltarLista"
+             Clicked="btnVoltarLista_Clicked"
+            />
+        </Grid>
     </VerticalStackLayout>
     
 </ContentPage>

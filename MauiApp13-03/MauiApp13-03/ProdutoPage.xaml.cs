@@ -6,4 +6,9 @@ public partial class ProdutoPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void btnVoltarLista_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//ListaCarros");
+    }
 }

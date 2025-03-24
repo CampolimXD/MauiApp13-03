@@ -7,9 +7,20 @@
     Shell.FlyoutBehavior="Disabled"
     Title="MauiApp13_03">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem>
+        <Tab Title="Home">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" 
+            />
+        </Tab>
+        <Tab Title="Lista">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:ListaCarros}"
+            Route="ListaCarros"  
+            />
+        </Tab>
+    </FlyoutItem>
+    
 
 </Shell>

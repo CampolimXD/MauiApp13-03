@@ -27,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ListaProdutoPage.xaml">
+	  <MauiXaml Update="ListaCarros.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ProdutoPage.xaml">
