@@ -19,8 +19,8 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
-                                    <Label Grid.Row="0" Text="{Binding Nome}" FontSize="Title"/>
-                                    <Label Grid.Row="1" Text="{Binding Marca, StringFormat= 'Marca: {0}'}"/>
+                                    <Label Grid.Row="0" Text="{Binding Nome}" FontSize="Title" TextColor="White"/>
+                                    <Label Grid.Row="1" Text="{Binding Marca, StringFormat= 'Marca: {0}'}" TextColor="White"/>
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

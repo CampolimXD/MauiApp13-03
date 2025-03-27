@@ -18,11 +18,11 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Text="{Binding Nome}" FontSize="Title"/>
-                <Label Grid.Row="1" Text="{Binding Preco, StringFormat= 'Preço: R${0}'}"/>
-                <Label Grid.Row="2" Text="{Binding Marca, StringFormat= 'Marca: {0}'}"/>
-                <Label Grid.Row="3" Text="{Binding Cor, StringFormat= 'Cor: {0}'}"/>
-                <Label Grid.Row="4" Text="{Binding Ano, StringFormat= 'Ano: {0}'}"/>
+                <Label TextColor="White" Grid.Row="0" Text="{Binding Nome}" FontSize="Title"/>
+                <Label TextColor="White" Grid.Row="1" Text="{Binding Preco, StringFormat= 'Preço: R${0}'}"/>
+                <Label TextColor="White" Grid.Row="2" Text="{Binding Marca, StringFormat= 'Marca: {0}'}"/>
+                <Label TextColor="White" Grid.Row="3" Text="{Binding Cor, StringFormat= 'Cor: {0}'}"/>
+                <Label TextColor="White" Grid.Row="4" Text="{Binding Ano, StringFormat= 'Ano: {0}'}"/>
             </Grid>
         </Border>
         <Grid Padding="20">
