@@ -425,9 +425,9 @@
         <Setter Property="Shell.ForegroundColor" Value="#1F2B33" />
         <Setter Property="Shell.TitleColor" Value="White" />
         <Setter Property="Shell.DisabledColor" Value="Gray" />
-        <Setter Property="Shell.UnselectedColor" Value="GValueray" />
+        <Setter Property="Shell.UnselectedColor" Value="Gray" />
         <Setter Property="Shell.NavBarHasShadow" Value="False" />
-        <Setter Property="Shell.TabBarBackgroundColor" ="#1F2B33" />
+        <Setter Property="Shell.TabBarBackgroundColor" Value="#1F2B33" />
         <Setter Property="Shell.TabBarForegroundColor" Value="#1F2B33" />
         <Setter Property="Shell.TabBarTitleColor" Value="White" />
         <Setter Property="Shell.TabBarUnselectedColor" Value="Gray" />
